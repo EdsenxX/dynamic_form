@@ -47,9 +47,12 @@ export default function Inputs(props) {
   };
 
   return (
-    <div className="w-7/12 rounded-xl shadow-lg bg-white p-7">
-      <div className="flex flex-col gap-5">
-        {props.inputs.map((input) => setInput(input))}
+    <div className="w-7/12 flex flex-col gap-5 ">
+      <div className="rounded-xl shadow-lg bg-white p-7">
+        <p className="text-xl mb-5 font-bold text-center">Formulario</p>
+        <div className="flex flex-col gap-5">
+          {props.inputs.map((input) => setInput(input))}
+        </div>
       </div>
     </div>
   );
