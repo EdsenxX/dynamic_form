@@ -1,6 +1,6 @@
 export default function componentName(props) {
   return (
-    <div className="rounded-xl shadow-lg bg-white p-7">
+    <div className="rounded-xl shadow-lg bg-white p-7 h-3/6 overflow-auto">
       <p className="text-xl font-bold text-center mb-2">Mis Inputs</p>
       {props.inputs.map((input) => (
         <div key={input.id} className="flex flex-col mb-3">

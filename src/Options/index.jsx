@@ -4,7 +4,7 @@ import MisInputs from "./MisInputs";
 export default function Options(props) {
   return (
     <div className="w-4/12 flex flex-col gap-5">
-      <div className="rounded-xl shadow-lg bg-white p-7">
+      <div className="rounded-xl shadow-lg bg-white p-7 h-3/6 overflow-auto">
         <h2 className="text-xl mb-5 font-bold text-center">Agregar un input</h2>
         <div className="flex flex-col">
           <label htmlFor="">Tipo de input</label>
@@ -12,6 +12,7 @@ export default function Options(props) {
             name="selectInput"
             onChange={props.handleSelectInput}
             value={props.inputType}
+            className="outline-none border-b border-black"
           >
             <option value="">Selecciona una opcion...</option>
             <option value="text">Text</option>
@@ -52,7 +53,7 @@ export default function Options(props) {
             )}
             <button
               type="submit"
-              className="bg-blue-500 rounded-lg text-white py-1 px-4 text-lg mt-5"
+              className="bg-blue-500 rounded-lg text-white py-1 w-full text-lg mt-5 shadow-lg shadow-blue-500/40"
             >
               Crear
             </button>

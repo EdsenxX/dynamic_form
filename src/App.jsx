@@ -67,7 +67,7 @@ function App() {
 
   return (
     <div className="w-full flex justify-center items-center bg-gray-100 h-screen">
-      <div className="w-10/12 flex gap-5">
+      <div className="w-10/12 flex gap-5 h-[95%] ">
         <Options
           handleSelectInput={handleSelectInput}
           inputType={inputType}

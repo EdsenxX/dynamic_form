@@ -47,7 +47,7 @@ export default function Inputs(props) {
   };
 
   return (
-    <div className="w-7/12 flex flex-col gap-5 ">
+    <div className="w-7/12 flex flex-col gap-5 max-h-full overflow-auto">
       <div className="rounded-xl shadow-lg bg-white p-7">
         <p className="text-xl mb-5 font-bold text-center">Formulario</p>
         <div className="flex flex-col gap-5">
